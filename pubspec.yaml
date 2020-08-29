@@ -1,6 +1,6 @@
 name: conekta_flutter
-description: Flutter plugin that allows tokenization of Conekta cards.
-version: 0.0.1+1
+description: Flutter plugin that allows you to create credit card tokens using the Conekta payment gateway.
+version: 0.0.1+2
 homepage: https://gitlab.com/apeirotechnologies/conekta_flutter
 
 environment:
