@@ -1,0 +1,25 @@
+name: conekta_flutter
+description: Flutter plugin that allows tokenization of Conekta cards.
+version: 0.0.1+1
+homepage: https://gitlab.com/apeirotechnologies/conekta_flutter
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+  flutter: ">=1.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.apeirotechnologies.conekta_flutter
+        pluginClass: ConektaFlutterPlugin
+      ios:
+        pluginClass: ConektaFlutterPlugin

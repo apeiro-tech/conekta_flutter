@@ -1,0 +1,25 @@
+image: cirrusci/flutter:latest
+
+stages:
+  - analyze
+  - test
+
+before_script:
+  - flutter pub get
+  - flutter clean
+
+analyze:
+  stage: analyze
+  script:
+    - flutter analyze
+  only:
+    - merge_requests
+    - master
+
+test:
+  stage: test
+  script:
+    - flutter test test/*
+  only:
+    - merge_requests
+    - master
