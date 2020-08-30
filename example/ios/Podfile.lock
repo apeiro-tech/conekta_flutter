@@ -1,0 +1,22 @@
+PODS:
+  - conekta_flutter (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - conekta_flutter (from `.symlinks/plugins/conekta_flutter/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  conekta_flutter:
+    :path: ".symlinks/plugins/conekta_flutter/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  conekta_flutter: 591d95f7ac48d342822181ddccbdd60de2ecf2d8
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+
+PODFILE CHECKSUM: c34e2287a9ccaa606aeceab922830efb9a6ff69a
+
+COCOAPODS: 1.8.4
