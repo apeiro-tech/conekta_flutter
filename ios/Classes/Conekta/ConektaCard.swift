@@ -10,5 +10,5 @@ struct ConektaCard {
     let cardNumber: String
     let expirationMonth: String
     let expirationYear: String
-    let ccv: String
+    let cvv: String
 }

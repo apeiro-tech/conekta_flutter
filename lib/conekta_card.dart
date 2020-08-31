@@ -6,21 +6,21 @@ class ConektaCard {
   final String cardNumber;
   final String expirationMonth;
   final String expirationYear;
-  final String ccv;
+  final String cvv;
 
   ConektaCard({
     @required this.cardName,
     @required this.cardNumber,
     @required this.expirationMonth,
     @required this.expirationYear,
-    @required this.ccv,
+    @required this.cvv,
   });
 
   /// Convert ConektaCard on a HashMap
   Map<String, dynamic> get toMap => {
         'cardName': cardName,
         'cardNumber': cardNumber,
-        'ccv': ccv,
+        'cvv': cvv,
         'expirationMonth': expirationMonth,
         'expirationYear': expirationYear,
       };

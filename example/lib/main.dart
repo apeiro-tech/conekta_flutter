@@ -29,7 +29,7 @@ class _MyAppState extends State<MyApp> {
       token = await conektaFlutter.createCardToken(ConektaCard(
         cardName: 'Alfonso Osorio',
         cardNumber: '4242424242424242',
-        ccv: '847',
+        cvv: '847',
         expirationMonth: '12',
         expirationYear: '2040',
       ));

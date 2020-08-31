@@ -5,5 +5,5 @@ data class ConektaCard(
     val cardNumber: String,
     val expirationMonth: String,
     val expirationYear: String,
-    val ccv: String
+    val cvv: String
 )
