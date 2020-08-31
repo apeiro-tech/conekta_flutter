@@ -2,13 +2,15 @@
 # conekta_flutter
 
 A Flutter plugin that allows to create a [Conekta](https://www.conekta.com/) card token
+
 [![pub package](https://img.shields.io/pub/v/conekta_flutter.svg)](https://pub.dartlang.org/packages/conekta_flutter)
 
 ## Installation
 
 Add _conekta_flutter_ as a dependency in [your pubspec.yaml file](https://flutter.io/platform-plugins/).
+
 ```
-conekta_flutter: ^0.0.2+4
+conekta_flutter: ^0.0.3+6
 ```
 
 ### Android

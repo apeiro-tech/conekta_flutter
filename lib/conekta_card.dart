@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 
+/// ConektaCard that represents the user credit card
 class ConektaCard {
   final String cardName;
   final String cardNumber;
@@ -15,6 +16,7 @@ class ConektaCard {
     @required this.ccv,
   });
 
+  /// Convert ConektaCard on a HashMap
   Map<String, dynamic> get toMap => {
         'cardName': cardName,
         'cardNumber': cardNumber,

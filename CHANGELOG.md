@@ -5,3 +5,7 @@
 ## 0.0.2+4
 
 * Allows to create a Conekta card token on iOS
+
+## 0.0.3+6
+
+* Fixed crash on start
