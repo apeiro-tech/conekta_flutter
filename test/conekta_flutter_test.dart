@@ -30,6 +30,7 @@ void main() {
     conektaFlutter = null;
   });
 
+  /// Unit test for setApiKey method
   test('setApiKey', () async {
     expect(
       await conektaFlutter.setApiKey(_mockApiKey),
@@ -37,6 +38,7 @@ void main() {
     );
   });
 
+  /// Unit test for createCardToken method
   test('createCardToken', () async {
     expect(
       await conektaFlutter.createCardToken(_getMockConektaCard()),
