@@ -14,7 +14,7 @@ import io.flutter.plugin.common.PluginRegistry.Registrar
 private const val API_KEY_ARGUMENT_NAME = "apiKey"
 private const val CARD_NAME_ARGUMENT_NAME = "cardName"
 private const val CARD_NUMBER_ARGUMENT_NAME = "cardNumber"
-private const val CCV_ARGUMENT_NAME = "ccv"
+private const val CVV_ARGUMENT_NAME = "cvv"
 private const val EXPIRATION_MONTH_ARGUMENT_NAME = "expirationMonth"
 private const val EXPIRATION_YEAR_ARGUMENT_NAME = "expirationYear"
 private const val SET_API_KEY_METHOD_NAME = "setApiKey"
@@ -96,14 +96,14 @@ class ConektaFlutterPlugin : FlutterPlugin, MethodCallHandler, ActivityAware {
         && arguments as? Map<*, *> != null
         && arguments[CARD_NAME_ARGUMENT_NAME] as? String != null
         && arguments[CARD_NUMBER_ARGUMENT_NAME] as? String != null
-        && arguments[CCV_ARGUMENT_NAME] as? String != null
+        && arguments[CVV_ARGUMENT_NAME] as? String != null
         && arguments[EXPIRATION_MONTH_ARGUMENT_NAME] as? String != null
         && arguments[EXPIRATION_YEAR_ARGUMENT_NAME] as? String != null
     ) {
         ConektaCard(
             cardName = arguments[CARD_NAME_ARGUMENT_NAME] as String,
             cardNumber = arguments[CARD_NUMBER_ARGUMENT_NAME] as String,
-            ccv = arguments[CCV_ARGUMENT_NAME] as String,
+            cvv = arguments[CVV_ARGUMENT_NAME] as String,
             expirationMonth = arguments[EXPIRATION_MONTH_ARGUMENT_NAME] as String,
             expirationYear = arguments[EXPIRATION_YEAR_ARGUMENT_NAME] as String
         )

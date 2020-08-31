@@ -50,10 +50,10 @@ public class SwiftConektaFlutterPlugin: NSObject, FlutterPlugin {
     private func getCardArguments(arguments: Dictionary<String, Any>) -> ConektaCard? {
         if let cardName = arguments["cardName"] as? String,
             let cardNumber = arguments["cardNumber"] as? String,
-            let ccv = arguments["ccv"] as? String,
+            let cvv = arguments["cvv"] as? String,
             let expirationMonth = arguments["expirationMonth"] as? String,
             let expirationYear = arguments["expirationYear"] as? String {
-            return ConektaCard(cardName: cardName, cardNumber: cardNumber, expirationMonth: expirationMonth, expirationYear: expirationYear, ccv: ccv)
+            return ConektaCard(cardName: cardName, cardNumber: cardNumber, expirationMonth: expirationMonth, expirationYear: expirationYear, cvv: cvv)
         } else {
             return nil
         }

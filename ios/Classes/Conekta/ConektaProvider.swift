@@ -23,7 +23,7 @@ class ConektaProvider: ConektaProtocol {
     }
     
     func onCreateCardToken(conektaCard: ConektaCard, callback: @escaping ConektaCardTokenCallback) {
-        let card = Card(number: conektaCard.cardNumber, name: conektaCard.cardName, cvc: conektaCard.ccv, expMonth: conektaCard.expirationMonth, expYear: conektaCard.expirationYear)
+        let card = Card(number: conektaCard.cardNumber, name: conektaCard.cardName, cvc: conektaCard.cvv, expMonth: conektaCard.expirationMonth, expYear: conektaCard.expirationYear)
         let token = conekta?.token(card: card)
         token?.create(completionHandler: { (response) in
             if let json = response as? Dictionary<String, Any> {

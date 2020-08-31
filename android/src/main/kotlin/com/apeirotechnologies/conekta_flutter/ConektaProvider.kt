@@ -36,7 +36,7 @@ class ConektaProvider : ConektaInterface {
                 Card(
                     conektaCard.cardName,
                     conektaCard.cardNumber,
-                    conektaCard.ccv,
+                    conektaCard.cvv,
                     conektaCard.expirationMonth,
                     conektaCard.expirationYear
                 )

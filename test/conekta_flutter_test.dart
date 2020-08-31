@@ -52,5 +52,5 @@ ConektaCard _getMockConektaCard() => ConektaCard(
       cardNumber: '42424242424242',
       expirationMonth: '12',
       expirationYear: '2020',
-      ccv: '468',
+      cvv: '468',
     );
