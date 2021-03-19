@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conekta_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/conekta_flutter.iml" group="conekta_flutter" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/conekta_flutter.iml" filepath="$PROJECT_DIR$/.idea/modules/conekta_flutter.iml" />
     </modules>
   </component>
 </project>
