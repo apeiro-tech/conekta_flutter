@@ -20,6 +20,7 @@ class ConektaProvider : ConektaInterface {
 
     override fun setApiKey(apiKey: String) {
         Conekta.setPublicKey(apiKey)
+        Conekta.setApiVersion("0.3.0")
         Conekta.collectDevice(activity)
     }
 
@@ -44,22 +45,24 @@ class ConektaProvider : ConektaInterface {
         }
     }
 
-    private fun handleResponse(json: JSONObject, callback: ConektaCardTokenCallback) = try {
-        if (json.getString("object") == "error") {
+    private fun handleResponse(json: JSONObject, callback: ConektaCardTokenCallback) {
+        try {
+            if (json.getString("object") == "error") {
+                callback(
+                        null,
+                        ConektaError.CardTokenError(json.getString("code"), json.getString("message"))
+                )
+            } else {
+                callback(json.getString("id"), null)
+            }
+        } catch (err: Exception) {
             callback(
-                null,
-                ConektaError.CardTokenError(json.getString("code"), json.getString("message"))
+                    null,
+                    ConektaError.CardTokenError(
+                            UNEXPECTED_CARD_TOKEN_CODE,
+                            err.message ?: UNEXPECTED_CARD_TOKEN_ERROR
+                    )
             )
-        } else {
-            callback(json.getString("id"), null)
         }
-    } catch (err: Exception) {
-        callback(
-            null,
-            ConektaError.CardTokenError(
-                UNEXPECTED_CARD_TOKEN_CODE,
-                err.message ?: UNEXPECTED_CARD_TOKEN_ERROR
-            )
-        )
     }
 }

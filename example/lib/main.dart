@@ -18,14 +18,14 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    // initPlatformState();
+    initPlatformState();
   }
 
   Future<void> initPlatformState() async {
     String token = "Unknown";
     try {
       ConektaFlutter conektaFlutter = ConektaFlutter();
-      await conektaFlutter.setApiKey('[PROVIDE_YOUR_API_KEY]');
+      await conektaFlutter.setApiKey('key_CUfWMZnF5zvKyzPs2m897TQ');
       token = await conektaFlutter.createCardToken(ConektaCard(
         cardName: 'Alfonso Osorio',
         cardNumber: '4242424242424242',
