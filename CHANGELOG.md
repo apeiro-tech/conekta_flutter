@@ -9,3 +9,9 @@
 ## 0.0.3+8
 
 * Fixed crash on start
+
+## 0.0.4
+
+* Use Conekta API Version 0.3.0
+* Upgrade gradle
+* Upgrade pods
