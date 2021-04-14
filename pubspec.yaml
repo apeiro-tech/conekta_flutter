@@ -1,6 +1,6 @@
-name: conekta_flutter
+name: conekta_flutter-nullsafety
 description: Flutter plugin that allows you to create credit card tokens using the Conekta payment gateway.
-version: 0.0.4
+version: 0.0.4-nullsafety.0
 homepage: https://github.com/apeiro-tech/conekta_flutter.git
 
 environment:

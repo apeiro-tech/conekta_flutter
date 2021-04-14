@@ -1,6 +1,7 @@
 
 # conekta_flutter
 
+This package was a copy from apeirotechnologies.com but Null safety
 A Flutter plugin that allows to create a [Conekta](https://www.conekta.com/) card token
 
 [![pub package](https://img.shields.io/pub/v/conekta_flutter.svg)](https://pub.dartlang.org/packages/conekta_flutter)
