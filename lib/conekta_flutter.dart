@@ -12,7 +12,7 @@ class ConektaFlutter {
   static const MethodChannel _channel = const MethodChannel(_PLUGIN_NAME);
 
   /// Set Conekta [apiKey]
-  Future<bool> setApiKey(String apiKey) =>
+  Future<bool?> setApiKey(String apiKey) =>
       _channel.invokeMethod(_SET_API_KEY_METHOD_NAME, {'apiKey': apiKey});
 
   /// Create Conekta token for given [card]

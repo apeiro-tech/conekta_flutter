@@ -15,3 +15,7 @@
 * Use Conekta API Version 0.3.0
 * Upgrade gradle
 * Upgrade pods
+
+# 0.0.4-nullsafety
+
+* Upgrade package to null safety

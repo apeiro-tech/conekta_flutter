@@ -8,7 +8,7 @@ const _mockApiKey = 'apiKey_287362183';
 
 void main() {
   const MethodChannel channel = MethodChannel('conekta_flutter');
-  ConektaFlutter conektaFlutter;
+  ConektaFlutter? conektaFlutter = ConektaFlutter();
 
   TestWidgetsFlutterBinding.ensureInitialized();
 
@@ -33,7 +33,7 @@ void main() {
   /// Unit test for setApiKey method
   test('setApiKey', () async {
     expect(
-      await conektaFlutter.setApiKey(_mockApiKey),
+      await conektaFlutter?.setApiKey(_mockApiKey),
       true,
     );
   });
@@ -41,7 +41,7 @@ void main() {
   /// Unit test for createCardToken method
   test('createCardToken', () async {
     expect(
-      await conektaFlutter.createCardToken(_getMockConektaCard()),
+      await conektaFlutter?.createCardToken(_getMockConektaCard()),
       _mockCardToken,
     );
   });
