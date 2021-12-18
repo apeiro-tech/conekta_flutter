@@ -19,3 +19,7 @@
 # 0.0.4-nullsafety
 
 * Upgrade package to null safety
+
+# 1.0.0
+
+* Upgrade package to Flutter v2.8.0
