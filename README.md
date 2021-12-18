@@ -10,7 +10,7 @@ A Flutter plugin that allows to create a [Conekta](https://www.conekta.com/) car
 Add _conekta_flutter_ as a dependency in [your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
 ```
-conekta_flutter: ^0.0.4-nullsafety
+conekta_flutter: ^1.0.0
 ```
 
 ### Android

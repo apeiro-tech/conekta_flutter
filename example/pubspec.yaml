@@ -1,16 +1,15 @@
 name: conekta_flutter_example
 description: Demonstrates how to use the conekta_flutter plugin.
-publish_to: 'none'
+publish_to: "none"
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.12.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   conekta_flutter:
     path: ../
-  cupertino_icons: ^0.1.3
 
 dev_dependencies:
   flutter_test:

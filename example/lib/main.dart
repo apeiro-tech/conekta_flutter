@@ -34,7 +34,7 @@ class _MyAppState extends State<MyApp> {
         expirationYear: '2040',
       ));
     } on PlatformException catch (exception) {
-      token = exception.message;
+      token = exception.message ?? "";
     }
 
     if (!mounted) return;
